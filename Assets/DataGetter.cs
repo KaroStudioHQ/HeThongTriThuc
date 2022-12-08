@@ -31,17 +31,17 @@ public class DataGetter : MonoBehaviour
 
                 IrisData irisData = new IrisData();
 
-                //irisData.info = new float[] {
-                //    (float.Parse(lineDatas[0]) - 4.3f)/(7.9f-4.3f),
-                //    (float.Parse(lineDatas[1]) - 2f)/(4.4f-2),
-                //    (float.Parse(lineDatas[2]) - 1)/(6.9f-1),
-                //    (float.Parse(lineDatas[3]) - 0.1f)/(2.5f-0.1f) };
-
                 irisData.info = new float[] {
-                    (float.Parse(lineDatas[0])),
-                    (float.Parse(lineDatas[1])),
-                    (float.Parse(lineDatas[2])),
-                    (float.Parse(lineDatas[3])) };
+                    (float.Parse(lineDatas[0]) - 4.3f)/(7.9f-4.3f),
+                    (float.Parse(lineDatas[1]) - 2f)/(4.4f-2),
+                    (float.Parse(lineDatas[2]) - 1)/(6.9f-1),
+                    (float.Parse(lineDatas[3]) - 0.1f)/(2.5f-0.1f) };
+
+                //irisData.info = new float[] {
+                  //  (float.Parse(lineDatas[0])),
+                    //(float.Parse(lineDatas[1])),
+                    //(float.Parse(lineDatas[2])),
+                    //(float.Parse(lineDatas[3])) };
 
                 if (lineDatas[4] == "Iris-setosa")
                 {

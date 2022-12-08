@@ -629,7 +629,9 @@ public class Main : MonoBehaviour
     private void Setup()
     {
         uiManager.ClearOutput();
-        
+        max_iterations = uiManager.GetMaxIter();
+        pop_size = uiManager.GetPopSize();
+
         highest = new NeuralNetwork(layers);
         for (int i = 0; i < pop_size; i++)
         {
